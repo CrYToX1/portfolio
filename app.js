@@ -12,13 +12,13 @@ fetch("./profile.json")
   })
   .then(data => {
     profilDiv.innerHTML = `
-      <h1>${data.jmeno}</h1>
+      <h2>${data.jmeno}</h2>
 
       <p><strong>Zájmy:</strong></p>
       <ul>
         ${data.zajmy.map(zajem => `<li>${zajem}</li>`).join("")}
       </ul>
-      
+
       <p><strong>Dovednosti:</strong></p>
       <ul>
         ${data.dovednosti.map(dovednost => `<li>${dovednost}</li>`).join("")}
