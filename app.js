@@ -18,6 +18,7 @@ fetch("./profile.json")
       <ul>
         ${data.zajmy.map(zajem => `<li>${zajem}</li>`).join("")}
       </ul>
+      
       <p><strong>Dovednosti:</strong></p>
       <ul>
         ${data.dovednosti.map(dovednost => `<li>${dovednost}</li>`).join("")}
